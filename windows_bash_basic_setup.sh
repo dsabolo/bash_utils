@@ -1,10 +1,13 @@
 #!/bin/bash
 ####################################################################
 #
-# Windows Subystem for linux, basic config for my Development tools
-# Script Tested in Ubuntu 14.04 LTS
+# Windows Subystem for Linux, basic config for my Development tools
+# Script Tested on Ubuntu 14.04 LTS
 #
 ####################################################################
+
+# Updating Packages Database
+sudo apt-get update
 
 # Install & Config git
 sudo apt-get install git
