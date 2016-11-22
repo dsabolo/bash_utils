@@ -18,6 +18,8 @@ ssh-keygen -t rsa -b 4096 -C "diego.sabolo@gmail.com"
 
 # Install & Config LAMPP for Drupal Development (By installing drupal7 packages, I'm getting all LAMPP dependencies)
 sudo apt-get install drupal7 drush 
+cd /etc/apache2/mods-enabled
+sudo ln -s /etc/apache2/mods-available/rewrite.load ./
 sudo service mysql start
 sudo apachectl start
 
