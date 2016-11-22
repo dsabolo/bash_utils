@@ -15,6 +15,8 @@ git config --global user.name "dsabolo"
 git config --global user.mail "diego.sabolo@gmail.com"
 ssh-keygen -t rsa -b 4096 -C "diego.sabolo@gmail.com"
 
+# Setting Up Bash Colors
+(cd /tmp && git clone --depth 1 --config core.autocrlf=false https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
 
 # Install & Config LAMPP for Drupal Development (By installing drupal7 packages, I'm getting all LAMPP dependencies)
 sudo apt-get install drupal7 drush 
